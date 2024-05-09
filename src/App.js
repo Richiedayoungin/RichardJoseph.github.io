@@ -22,6 +22,7 @@ import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
 
 import Experience from "./components/home/Experience";
+import Spline from '@splinetool/react-spline';
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -33,6 +34,7 @@ const Home = React.forwardRef((props, ref) => {
         icons={mainBody.icons}
         ref={ref}
       />
+      <div><Spline source="https://prod.spline.design/J06cuV8Es5zG9bwP/scene.splinecode"/></div>
       {about.show && (
         <AboutMe
           heading={about.heading}
@@ -79,7 +81,7 @@ const App = () => {
   const titleRef = React.useRef();
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       {navBar.show && <Navbar ref={titleRef} />}
       <Routes>
         <Route path="/" exact element={<Home ref={titleRef} />} />

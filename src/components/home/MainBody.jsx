@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Typist from 'react-typist-component';
 import { Jumbotron } from "./migration";
+import Spline from "@splinetool/react-spline";
 
 const MainBody = React.forwardRef(
   ({ gradient, title, message, icons }, ref) => {
