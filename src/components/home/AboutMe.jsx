@@ -41,28 +41,29 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
 
   return (
     <Jumbotron id="aboutme" className="m-0" style={{ position: "relative" }}>
-    <div className="container row">
-      <div className="col-12">
-        <Spline scene="https://prod.spline.design/J06cuV8Es5zG9bwP/scene.splinecode" style={{ position: "absolute", top: 0, left: -1000, width: "100%", height: "100%" }}>
-        </Spline>
-        <div style={{ position: "relative", zIndex: 1 }}>
-          <h2 className="display-4 mb-5 text-center">{heading}</h2>
-          <p className="lead text-center">{message}</p>
-          {resume && (
-            <p className="lead text-center">
-             <button
-                className="btn btn-outline-dark btn-lg"
-                onClick={handleResumeDownload}
-                aria-label="Download Resume"
-              >
-                Resume
-              </button>
-            </p>
-          )}
+      <div className="container row">
+        <div className="col-md-12">
+          {/* Adjust position and size of Spline */}
+          <div style={{ position: "relative", zIndex: 1 }}>
+            <h2 className="display-4 mb-5 text-center">{heading}</h2>
+            <p className="lead text-center">{message}</p>
+            {resume && (
+              <p className="lead text-center">
+                <button
+                  className="btn btn-outline-dark btn-lg"
+                  onClick={handleResumeDownload}
+                  aria-label="Download Resume"
+                >
+                  Resume
+                </button>
+              </p>
+            )}
+          </div>
+          {/* Render Spline component */}
+          <Spline scene="https://prod.spline.design/J06cuV8Es5zG9bwP/scene.splinecode" style={{ width: "100%", height: "auto" }} />
         </div>
       </div>
-    </div>
-  </Jumbotron>
+    </Jumbotron>
 );
 };
 
