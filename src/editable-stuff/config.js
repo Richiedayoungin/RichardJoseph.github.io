@@ -43,7 +43,7 @@ const about = {
   imageSize: 375,
   message:
     "My name is Richard Joseph. I’m a graduate of 2024 from Conestoga College in Software Engineering in Toronto Ontario Canada. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+  resume: require("../editable-stuff/resume.pdf"),
 };
 
 // PROJECTS SECTION

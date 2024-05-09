@@ -2,7 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Typist from 'react-typist-component';
 import { Jumbotron } from "./migration";
-import Spline from "@splinetool/react-spline";
 
 const MainBody = React.forwardRef(
   ({ gradient, title, message, icons }, ref) => {
@@ -11,12 +10,13 @@ const MainBody = React.forwardRef(
         fluid
         id="home"
         style={{
-          background: `linear-gradient(136deg,${gradient})`,
+          background:`linear-gradient(136deg,${gradient})`,
           backgroundSize: "1200% 1200%",
         }}
         className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
       >
-        <div id="stars"></div>
+        <div id="stars" style={{ position: 'absolute', top: 0, left: '15%'}}></div>
+
         <Container className="text-center">
           <h1 ref={ref} className="display-1">
             {title}
