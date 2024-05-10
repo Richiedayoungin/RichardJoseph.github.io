@@ -14,7 +14,13 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
 
   useScrollPosition(
     ({ prevPos, currPos }) => {
-      if (!isScrolled && currPos.y - 400 < 0) setIsScrolled(true);
+      // Calculate the total height of the document
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      // Check if the user has scrolled to the bottom of the page
+      const isAtBottom = totalHeight > 0 && (window.scrollY >= totalHeight);
+  
+      // Update isScrolled state based on reaching the bottom
+      setIsScrolled(isAtBottom);
     },
     [],
     skillsTabRef

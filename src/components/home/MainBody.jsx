@@ -15,7 +15,7 @@ const MainBody = React.forwardRef(
         }}
         className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
       >
-        <div id="stars" style={{ position: 'absolute', top: 0, left: '15%'}}></div>
+        <div id="stars" style={{ position: 'absolute', top: 0, left: '10%'}}></div>
 
         <Container className="text-center">
           <h1 ref={ref} className="display-1">
