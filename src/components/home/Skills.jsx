@@ -14,13 +14,17 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
 
   useScrollPosition(
     ({ prevPos, currPos }) => {
-      // Calculate the total height of the document
-      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-      // Check if the user has scrolled to the bottom of the page
-      const isAtBottom = totalHeight > 0 && (window.scrollY >= totalHeight);
+      // Calculate the distance from the bottom of the page
+      const distanceToBottom = document.documentElement.scrollHeight - window.innerHeight - window.scrollY;
+      
+      // Define a threshold for activating the animation (e.g., 100 pixels)
+      const activationThreshold = 500;
   
-      // Update isScrolled state based on reaching the bottom
-      setIsScrolled(isAtBottom);
+      // Check if the distance to the bottom is less than the activation threshold
+      const isNearBottom = distanceToBottom <= activationThreshold;
+  
+      // Update isScrolled state based on whether the user is near the bottom of the page
+      setIsScrolled(isNearBottom);
     },
     [],
     skillsTabRef
