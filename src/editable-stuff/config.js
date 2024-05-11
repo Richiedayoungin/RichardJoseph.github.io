@@ -119,7 +119,7 @@ const getInTouch = {
 };
 
 const experiences = {
-  show: true,
+  show: false,
   heading: "Experiences",
   data: [
     {
