@@ -119,12 +119,12 @@ const getInTouch = {
 };
 
 const experiences = {
-  show: false,
+  show: true,
   heading: "Experiences",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
+      role: 'Associate Web Administrator',// Here Add Company Name
+      companylogo: require('../assets/img/Mclean Sherwood.png'),
       date: 'June 2018 – Present',
     },
     {
