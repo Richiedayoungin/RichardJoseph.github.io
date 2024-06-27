@@ -119,19 +119,19 @@ const getInTouch = {
 };
 
 const experiences = {
-  show: false,
+  show: true,
   heading: "Experiences",
   data: [
     {
-      role: 'Associate Web Administrator',// Here Add Company Name
+      role: 'Associate Web Administrator (Internship)' ,// Here Add Company Name
       companylogo: require('../assets/img/Mclean Sherwood.png'),
       date: 'June 2018 – Present',
     },
-    {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
-    },
+    // {
+    //   role: 'Front-End Developer',
+    //   companylogo: require('../assets/img/boeing.png'),
+    //   date: 'May 2017 – May 2018',
+    // },
   ]
 }
 

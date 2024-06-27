@@ -14,7 +14,8 @@ const Experience = ({ experiences }) => {
           <h2 className="display-4 mb-5 text-center">
             {experiences.heading}
           </h2>
-          <Row>
+          <Row className="justify-content-center"> 
+            {/* Change above line when you add more experinces */}
             {
               experiences.data.map((data, index) => {
                 return <ExperienceCard key={index} data={data} />

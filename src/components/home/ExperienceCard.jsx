@@ -6,9 +6,9 @@ import {
 
 const ExperienceCard = ({ data }) => {
   return (
-    <Col lg="6">
-      <div className="pb-5 text-center">
-        <img className=" bg-white mb-3" src={data.companylogo} alt="" />
+    <Col lg="6" className="d-flex justify-content-center">
+      <div className="pb-5 text-center experience-card`">
+        <img className="company-logo bg-white mb-3" src={data.companylogo} alt="" />
         <p className="lead">
           {data.role}
           <br />
