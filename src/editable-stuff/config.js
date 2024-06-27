@@ -125,7 +125,7 @@ const experiences = {
     {
       role: 'Associate Web Administrator (Internship)' ,// Here Add Company Name
       companylogo: require('../assets/img/Mclean Sherwood.png'),
-      date: 'June 2018 – Present',
+      date: 'June 2023 – October 2023',
     },
     // {
     //   role: 'Front-End Developer',
